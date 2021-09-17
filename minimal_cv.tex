@@ -5,6 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{bibentry}
+\usepackage{titling}
 
 \usepackage{array, xcolor}
 \definecolor{lightgray}{gray}{0.8}
@@ -13,9 +14,12 @@
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 1.5pt}
 
+
+\setlength{\droptitle}{-8em}   % This is your set screw
+
 \title{\bfseries\Huge Wanderson Ferreira}
-\author{iagwanderson@gmail.com \\
-\href{http://wandersoncferreira.github.io}{http://wandersoncferreira.github.io}}
+\author{wand@hey.com \\
+\href{https://world.hey.com/wand}{personal blog page}}
 \date{\today}
 \begin{document}
 \maketitle
@@ -23,8 +27,7 @@
 % Section for the address
 \begin{center}
   \begin{minipage}{.7\textwidth}
-    Address: Rua João Lourenço, 763\\
-    São Paulo 04508-903\\
+    Address: Rua Maria José da Conceição, 75\\
     São Paulo, Brazil.
   \end{minipage}%
   \begin{minipage}{.5\textwidth}
@@ -35,16 +38,16 @@
 \end{center}
 
 \section*{Objectives}
-A position as Software Engineer. Despite my academic background, I
-always worked with software or algorithm development. Since 2016 I
-have been working full-time with software development related to
-Machine Learning (MLE) solutions.  Today I have a great interest for
-software that add business value. I also have a great experience with
-Machine Learning models, techniques and the infrastructure needed to
-perform predictive analytics.  Today I am very interested into
-Functional Programming and despite my knowledge and desire to work
-with MLE in the future, I would love to be focusing on software
-itself.
+Build products that last the test of time.
+
+
+\section*{Brief Summary}
+
+Despite my academic background, I have been working with software and
+algorithm development since 2010. I've been leading projects in supply
+chain and financial industries using Python, Golang, Scala, and mostly
+Clojure.
+
 
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
@@ -52,74 +55,119 @@ itself.
   &{\textbf{Thesis}: Deep Learning: Inspecting Restricted Boltzman Machines} \\
   &{\textbf{Supervisor}: Dr. Prof. Emilio Del Moral Hernandez} \\
   &{\textbf{Concentration}: Computer Science, Scientific Programmind and Data Science.} \\ \\
-  
+
 
   2010--2015&{\bf Bachelor of Science in Geophysics, Universidade de São Paulo, Brazil}\\[5pt]
   &{\textbf{Thesis}: Global Optimization for AVO inversion in unconsolidated sediments.} \\
   &{\textbf{Supervisors}: Dr. Liliana Diogo and Dr. Fred Hilterman (UH)}\\
+  &{\textbf{Programming Languages}: Fortran and MATLAB. \\
   &{\textbf{Concentration}: Scientific Programming}\\ \\
 
   2014--2015&{\bf Exchange Program, Exploration Geophysics, University of Houston, US}\\[5pt]
   &{\textbf{Thesis}: Synthetic Seismogram modeling package in MATLAB}\\
   &{\textbf{Supervisor}: Dr. Fred Hilterman}\\
   &{\textbf{Concentration}: Scientific Programming}\\ \\
-  
+
 \end{tabular}
 
-\section*{Programming Skills and Projects}
+
+\section*{Open source projects}
 \begin{tabular}{L!{\VRule}R}
-  Python Libraries& Tensorflow, Keras, Sklearn, Pandas, Numpy, Multiprocessing, Pyramid, Pytest, Unitest, SQLalchemy \\
-  Python Projects& arxivML, ConvNets, pandas (small contributions) \\
-  Fortran Projects& Development of Genetic Algorithm for Geophysical Applications \\
-  Lisp Projects& Maintainer of helm-spotify-plus, python-experiment and others
-  small personal projects\\
-  Clojure& Development of small APIs and particular projects\\
-  Git& Maintainer of internal projects at work.\\
-  OS& Unix advanced expertise, OSX and basic Windows.\\
-  Amazon AWS& RDS and EC2 deployment \\
-  Misc Projects& Involved in qutebrowser (keyboard-driven web browser), fish-shell and archlinux forums for some months.
+  Emacs Lisp& Maintainer of helm-spotify-plus. Contributor to pomidor,
+  organic-green, and many fixes in other projects\\
+
+  Clojure& Regular contributor to spec-tools, and small contributions
+  in other projects e.g. reitit, depstar, clara-rules. \\
 \end{tabular}
+
+\vspace{1cm}
+More details on \href{https://github.com/wandersoncferreira}{github profile}.
+
 
 \section*{Professional Experience}
 \begin{tabular}{L!{\VRule}R}
-  2018--current&{\bf Chief Information Officer at Captalys
-    Investimentos}\\ &Working together with the CTO of the company to
-  manage a Tech and Data Science team. Today I am focusing on the
-  Captalys Platform which is a new business unit targeting to provide
-  a complete framework to help companies perform credit loans inside
-  their ecosystems. Tech stack used inside the project: Python and
-  Golang for backend APIs, Docker, Kubernetes, KONG (API gateway),
-  Mysql and MongoDB databases.\\[5pt]
-  
-  2017--2018&{\bf Data Scientist at Captalys Investimentos}\\
-  &Responsable for creating an area of Data Science inside the company to
-  perform credit risk models for B2B loans. Implement machine learning models
-  for hospitals of the whole country using technologies such as Python, Golang,
-  Scala and Apache Cassandra databases.\\[5pt]
-  2017--2017&{\bf Product Developer Leader at TEVEC Metodologias e Sistemas}\\
-  &Responsable for the design and implementation of a Machine Learning framework
-  to handle real-time forecasting for two major companies in the retail business
-  in São Paulo. \\[5pt]
-  
-  2016--2017&{\bf Analyst in Mathematical Modeling at TEVEC Metodologias e
-    Sistemas.}\\
-  &Member of the research team to provide solutions in Machine
-  Learning to attend supply chain problems. The main activity is related to
-  development of new algorithms like clustering, decision tress and mainly neural
-  networks of different architectures to perform time-series predictions. \\[5pt]
 
-  2015--2015&{\bf Teacher Assistant at Universidade de São Paulo.}\\ &
-  Supervising students in seismic classes, helping them with theoretical
-  questions and practical exercises in the Seismic Unix package written in C and
-  shell scripts. \\[5pt]
+  %% contractor
+  2020--current&{\bf Contractor Senior Clojure Developer - Remotely Boston}\\
+  & %% description of job using present tense
+  \begin{itemize}
+    \setlength\itemsep{0.1em}
+  \item Developed real-time data pipelines for esports games at App Sauce (ClojureDesign Podcast)
+  \item Developing document custody solution for clinical trials at Reify Health
+  \item \textbf{Tech Stack}: Clojure, Postgresql, Kafka, and AWS services.
+  \end{itemize}
+  \\
 
-  2013-2013&{\bf Trainee in Geophysics at Institute of Technological Research of
-    São Paulo, IPT}\\ & Performed seismic, bathymetric, sonar data acquisition
-  in Shallow Waters. Such as sonar data processing and interpretation.\\[5pt]
+  %% Principal Software Engineer at Captalys
+  2019--2020/Nov&{\bf Principal Software Engineer at Captalys}\\
+  & %% description of job using past tense
+  \vspace{-0.1cm}
+  \begin{itemize}
+    \setlength\itemsep{0.1em}
+  \item Decided to expand the rationale of Credit Platform to other business units
+  \item Designed the architecture for services on Credit Management
+  \item Designed the architecture for services on Credit Securitization
+  \item Supported the adoption of Scrum and new hires for Product positions
+  \item Supported new product implementations
+  \item Supported team growth e.g. from 5 to 50 developers in 15 months.
+  \item \textbf{Tech Stack}: Clojure, Python, Kubernetes, Postgresql, and AWS services.
+  \end{itemize}
+  \\
 
-  2012-2013&{\bf Teacher Assistant at Universidade de São Paulo}\\
-  & Supervising students with Physics I, mainly with questions about mechanics.
+  %% Lead Software at Captalys
+  2017/Dec--2019/Jan&{\bf Lead Software Engineer at Captalys}\\
+  & %% description of job using past tense
+  \vspace{-0.1cm}
+  \begin{itemize}
+    \setlength\itemsep{0.1em}
+  \item Invited to create and lead a Tech team to build a Credit Platform
+  \item Invited to participate in the Partnership program of the company
+  \item Developed public APIs to enable partners to provide credit in their ecosystem
+  \item Designed Platform architecture and main components
+  \item Worked closely with Product team to deliver Tomatico - Credit for PME
+  \item \textbf{Tech Stack}: Clojure, Python, Kubernetes, PostgreSQL, and AWS Services
+  \end{itemize}
+  \\
+
+  %% MLE at Captalys
+  2017--2017/Nov&{\bf Tech Lead ML Engineer at Captalys.}\\
+  & %% description of job using past tense
+  \vspace{-0.1cm}
+  \begin{itemize}
+    \setlength\itemsep{0.1em}
+  \item Created Data Science team from scratch
+  \item Implemented Random Forest models to score Hospitals based on SUS data
+  \item Implemented Descriptive Analytics Platform
+  \item \textbf{Tech Stack}: Python, Scala, Apache Cassandra and MySQL.
+  \end{itemize}
+  \\
+
+  %% tech lead
+  2016--2017/May&{\bf Tech Lead at TEVEC Metodologias e Sistemas.}\\
+  & %% description of job using past tense
+  \vspace{-0.1cm}
+  \begin{itemize}
+    \setlength\itemsep{0.1em}
+  \item Designed and Implemented Machine Learning framework
+  \item Ease the work for Data Scientist to develop and deploy models
+  \item \textbf{Tech Stack}: Python, MySQL, Tensorflow, Theano, MongoDB.
+  \end{itemize}
+  \\
+
+  %% Math modeling at TEVEC
+
+  2016/Fev--2016/Nov&{\bf Analyst in Mathematical Modeling at TEVEC Metodologias e Sistemas.}\\
+  & %% description of job using past tense
+  \begin{itemize}
+    \setlength\itemsep{0.1em}
+  \item Member of Research team in Machine Learning focusing on supply chain
+  \item Developed algorithms e.g. clustering, and decision trees
+  \item Developed several neural network architectures for timeseries prediction
+  \item \textbf{Tech Stack}: Python, and MySQL.
+  \end{itemize}
+
 \end{tabular}
+
 
 \section*{Scholarships and Awards}
 \begin{tabular}{L!{\VRule}R}
